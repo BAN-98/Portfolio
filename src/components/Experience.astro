@@ -3,20 +3,18 @@ import ExperienceItem from "../components/ExperienceItem.astro";
 const experience = [
   {
     date: "Actualmente ...",
-    title: "Código de interfaz de usuario de la aplicación en Tailwind",
+    title: "Desarrollo de Modulos para el area de Salud",
     description:
-      "Obtuve acceso a más de 20 páginas, incluyendo un diseño de tablero, gráficos, Kanban, tablero, calendario y preventa de comercio electrónico y marketing.",
-    link: "#",
+      "A cargo en mas de 15 modulos distribuidos tanto para la area contable como para la area de salud, Manipulacion de bases de datos y toma de deciciones",
   },
   {
     date: "Marzo de 2023",
     title: "Diseño de interfaz de usuario de marketing en Figma",
     description:
       "Obtuve acceso a más de 20 páginas, incluyendo un diseño de tablero, gráficos, Kanban, tablero, calendario y preventa de comercio electrónico y marketing.",
-      
   },
   {
-    date: "Abril de 2023",
+    date: "Marzo de 2020",
     title: "Código de interfaz de usuario de comercio electrónico en Tailwind",
     description:
       "Obtuve acceso a más de 20 páginas, incluyendo un diseño de tablero, gráficos, Kanban, tablero, calendario y preventa de comercio electrónico y marketing.",
@@ -25,6 +23,11 @@ const experience = [
 ---
 
 <ol class="relative border-s border-gray-200 ml-3">
-  {experience.map((experience) => <li class="mb-10 ms-4"><ExperienceItem {...experience} /></li>)}
+  {
+    experience.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
 </ol>
-
